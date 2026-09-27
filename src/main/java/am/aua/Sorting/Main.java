@@ -9,7 +9,9 @@ public class Main {
     final static int BUBBLE = 2;
     final static int MERGE = 3;
     final static int QUICK = 4;
-    final static int NUM_OF_ALGORITHMS = 5;
+    final static int BUCKET = 5;
+    final static int RADIX = 6;
+    final static int NUM_OF_ALGORITHMS = 7;
     final static int SIZE = 10000;
     final static int COUNT = 100;
     final static int ORIGIN = 1;
@@ -34,6 +36,8 @@ public class Main {
             avg[BUBBLE] += bubble(arr);
             avg[MERGE] += merge(arr);
             avg[QUICK] += quick(arr);
+            avg[BUCKET] += bucket(arr);
+            avg[RADIX] += radix(arr);
         }
 
         for (int i = 0; i < NUM_OF_ALGORITHMS; i++)
@@ -47,6 +51,8 @@ public class Main {
         System.out.println("Bubble: " + avg[BUBBLE]);
         System.out.println("Merge: " + avg[MERGE]);
         System.out.println("Quick: " + avg[QUICK]);
+        System.out.println("Bucket: " + avg[BUCKET]);
+        System.out.println("Radix: " + avg[RADIX]);
     }
 
     private static double selection(int[] arr) {
@@ -81,6 +87,20 @@ public class Main {
         int[] arr_ = Arrays.copyOf(arr, arr.length);
         double start = System.currentTimeMillis();
         Quick.quickSort(arr_);
+        return System.currentTimeMillis() - start;
+    }
+
+    private static double bucket(int[] arr) {
+        int[] arr_ = Arrays.copyOf(arr, arr.length);
+        double start = System.currentTimeMillis();
+        Bucket.bucketSort(arr_, BOUND);
+        return System.currentTimeMillis() - start;
+    }
+
+    private static double radix(int[] arr) {
+        int[] arr_ = Arrays.copyOf(arr, arr.length);
+        double start = System.currentTimeMillis();
+        Radix.radixSort(arr_, BOUND);
         return System.currentTimeMillis() - start;
     }
 }

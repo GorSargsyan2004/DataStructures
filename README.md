@@ -10,13 +10,14 @@ The code is organized by topic for easier navigation:
 
 *   **`src/main/java/am/aua/Sorting/`**: Contains various sorting algorithms and a `README.md` with performance benchmarks.
 *   **`src/main/java/am/aua/LinkedLists/`**: Contains implementations of Singly, Doubly, and Circular linked lists, along with a `README.md` explaining their mechanics.
+*   **`src/main/java/am/aua/Stack/`**: Contains implementations of Stack using Arrays and Linked Lists.
 
 ---
 
 ## How to Use This Repo
 
 ### For Quick Review
-If you're cramming before a quiz, focus on the `README.md` files located in each sub-directory. They contain:
+If you're cramming before a quiz, focus on the `README.md` files located in each subdirectory. They contain:
 *   **Concepts:** Short, high-level summaries of how the structure works.
 *   **Cheat Sheets:** Visualizations or tables comparing complexity and use cases.
 *   **Benchmarks:** Real-world performance results (specifically in the Sorting directory).
@@ -29,4 +30,4 @@ If you want to understand *how* it's actually built:
 ### Tips
 *   **Testing:** Use the provided `Main.java` files within each directory as a starting point to test the methods.
 
-*Happy coding and learning, and try not to break the project structure.* 😊
+*Happy coding and learning, and try not to mess up the midterms.* 😊

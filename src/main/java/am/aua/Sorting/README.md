@@ -24,6 +24,14 @@ Welcome to the collection. Sorting is the bread and butter of Data Structures. D
     *   *Complexity:* Average O(n log n), Worst O(n²)
     *   *Advantages:* Very cache-efficient and generally faster in practice than Merge Sort.
     *   *Disadvantages:* Worst-case O(n²) if the pivot is chosen poorly; not stable by default.
+*   **Bucket Sort:** Distributes elements into buckets. Excellent for limited ranges.
+    *   *Complexity:* O(n + k)
+    *   *Advantages:* Very fast for uniformly distributed data.
+    *   *Disadvantages:* High auxiliary space requirement.
+*   **Radix Sort:** Sorts by processing individual digits of numbers.
+    *   *Complexity:* O(d * (n + b))
+    *   *Advantages:* Highly efficient for integers with a set range.
+    *   *Disadvantages:* Requires specific data formats (integers, strings) to be effective.
 
 ---
 ### Performance Benchmark
@@ -31,6 +39,8 @@ Welcome to the collection. Sorting is the bread and butter of Data Structures. D
 
 | Algorithm | Avg Time (ms) |
 | :--- | :--- |
+| **Bucket Sort** | 0.05 |
+| **Radix Sort** | 0.15 |
 | **Quick Sort** | 0.62 |
 | **Merge Sort** | 0.91 |
 | **Insertion Sort** | 3.68 |

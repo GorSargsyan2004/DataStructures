@@ -31,7 +31,7 @@ public class Main {
 
         System.out.println("\n--- Circular Linked List Demonstration ---");
 
-        CircularLinkedList<Integer> circular = new CircularLinkedList<>();
+        CircularlyLinkedList<Integer> circular = new CircularlyLinkedList<>();
         circular.addFirst(100);
         circular.addLast(200);
 
