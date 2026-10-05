@@ -1,35 +1,55 @@
 # Queue Implementations
 
-This package contains implementations of various queue-based data structures. Here is the breakdown.
+This package contains implementations of various queue-based data structures in Java, adhering to the First-In, First-Out (FIFO) principle, with specialized variations for different operational requirements.
 
-## 1. Deque (Double-Ended Queue)
-A Deque is a generalized version of a queue where elements can be inserted or removed at both the front and the back.
+## 1. Queue Interface
+The core `Queue<E>` interface defines the standard behavior for all queue implementations.
 
-### Advantages:
-- **Flexibility:** Supports FIFO (queue) and LIFO (stack) operations efficiently.
-- **Efficiency:** O(1) time complexity for additions and removals at both ends (if implemented with an array or doubly linked list).
+### Methods
+- `int size()`: Returns the number of elements in the queue.
+- `boolean isEmpty()`: Checks if the queue is empty.
+- `void enqueue(E e)`: Inserts an element at the rear.
+- `E first()`: Returns the front element without removing it.
+- `E dequeue()`: Removes and returns the front element.
 
-### Disadvantages:
-- **Implementation Complexity:** Harder to implement than a standard FIFO queue.
+---
 
-## 2. Circular Queue
-A queue that connects the last position back to the first, forming a circle. This is particularly useful for fixed-size buffers where space efficiency matters.
+## 2. Queue Types
 
-### Advantages:
-- **Memory Efficiency:** Avoids the "shifting" problem found in standard array-based queues by reusing vacated spaces.
-- **Performance:** O(1) for enqueue and dequeue operations.
+### LinkedQueue
+A queue implemented using a Singly Linked List.
+- **Where to use:** When you need a dynamic, unbounded queue where you don't know the capacity in advance.
+- **Advantages:** Dynamic resizing, no memory wasted on unused capacity.
+- **Disadvantages:** Slightly higher overhead per element due to node object allocation.
 
-### Disadvantages:
-- **Fixed Size:** Often bounded to a specific capacity. If the queue is full, it cannot accept new elements without dropping or resizing.
+### ArrayQueue
+A queue implemented using a fixed-size array.
+- **Where to use:** When you have a predictable maximum capacity and want to minimize object allocation overhead.
+- **Advantages:** Cache-friendly and low memory overhead.
+- **Disadvantages:** Limited capacity; resizing is an O(n) operation.
 
-## Complexity Table
+### CircularQueue
+An extension of the queue where the rear connects back to the front. 
+- **Interface:** Extends `Queue<E>` and adds `void rotate()`.
+- **Where to use:** Fixed-size buffers, round-robin scheduling, and stream processing.
+- **Advantages:** Highly efficient space reuse without shifting elements.
+- **Disadvantages:** Fixed capacity; can overflow if the production rate exceeds consumption.
 
-| Data Structure | Operation | Complexity |
-| :--- | :--- | :--- |
-| Deque | addFirst/Last | O(1) |
-| Deque | removeFirst/Last | O(1) |
-| Circular Queue | enqueue | O(1) |
-| Circular Queue | dequeue | O(1) |
-| Circular Queue | rotate | O(1) |
+### Deque (Double-Ended Queue)
+A generalized queue allowing insertion/removal at both ends.
+- **Where to use:** When you need a combination of Queue and Stack functionality (e.g., undo/redo buffers, work-stealing algorithms).
+- **Advantages:** O(1) operations at both ends.
+- **Disadvantages:** More complex to implement and manage.
 
-All implementations are optimized for standard use cases. Don't go trying to perform O(n) operations on an O(1) data structure unless you want a lecture.
+---
+
+## 3. Performance Summary
+
+| Data Structure | Enqueue | Dequeue | Notes |
+| :--- | :--- | :--- | :--- |
+| `LinkedQueue` | O(1) | O(1) | Dynamic sizing |
+| `ArrayQueue` | O(1) | O(1) | Predictable, fixed-size |
+| `CircularQueue` | O(1) | O(1) | Efficient circular buffer |
+| `Deque` | O(1) | O(1) | Flexible (front & back) |
+
+*Everything here is O(1) for basic operations.*
