@@ -13,6 +13,7 @@ The code is organized by topic for easier navigation:
 *   **`src/main/java/am/aua/Stack/`**: Contains implementations of Stack using Arrays and Linked Lists.
 *   **`src/main/java/am/aua/Queue/`**: Contains implementations of Queue, Deque and Circular Queue using Arrays and Linked Lists.
 *   **`src/main/java/am/aua/List/`**: Contains implementations of `ArrayList`.
+*   **`src/main/java/am/aua/PositionalList/`**: Contains implementations of `PositionalList` (handles/cursors approach).
 *   **`src/main/java/am/aua/homeworks/`**: Each homework package contains its homework question and my solutions.
 
 ---
