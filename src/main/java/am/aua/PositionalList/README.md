@@ -1,5 +1,21 @@
 # Positional Lists 📚
 
+## Public Methods
+* `int size()`: Returns the number of elements in the list.
+* `boolean isEmpty()`: Tests whether the list is empty.
+* `Position<E> first()`: Returns the first Position.
+* `Position<E> last()`: Returns the last Position.
+* `Position<E> before(Position<E> p)`: Returns the Position before p.
+* `Position<E> after(Position<E> p)`: Returns the Position after p.
+* `Position<E> addFirst(E e)`: Inserts element at the front.
+* `Position<E> addLast(E e)`: Inserts element at the back.
+* `Position<E> addBefore(Position<E> p, E e)`: Inserts element before p.
+* `Position<E> addAfter(Position<E> p, E e)`: Inserts element after p.
+* `E set(Position<E> p, E e)`: Replaces element at p.
+* `E remove(Position<E> p)`: Removes element at p.
+
+---
+
 Welcome to the **Positional List** implementation. A Positional List provides a clean, abstract way to manipulate elements in a collection by their *position*, rather than by numerical index.
 
 ## What is a Positional List?

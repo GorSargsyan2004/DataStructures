@@ -1,5 +1,16 @@
 # Linked Lists 🔗
 
+## Public Methods (Singly Linked List)
+* `addFirst(E e)`: Adds element to front.
+* `addLast(E e)`: Adds element to back.
+* `removeFirst()`: Removes and returns head element.
+* `first()`: Returns head element.
+* `last()`: Returns tail element.
+* `size()`: Returns number of elements.
+* `isEmpty()`: Checks if empty.
+
+---
+
 A Linked List is a linear data structure where elements are not stored in contiguous memory locations. Instead, each element (called a **Node**) points to the next node in the sequence.
 
 ## Core Concepts

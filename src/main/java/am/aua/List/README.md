@@ -1,5 +1,16 @@
 # ArrayList Implementation
 
+## Public Methods
+* `get(int index)`: Returns the element at the specified index.
+* `set(int index, E element)`: Replaces the element at the specified index.
+* `add(E element)`: Appends an element to the end.
+* `add(int index, E element)`: Inserts an element at the specified index.
+* `remove(int index)`: Removes the element at the specified index.
+* `size()`: Returns the number of elements.
+* `isEmpty()`: Checks if the list is empty.
+
+---
+
 Oh, look who decided to learn about ArrayLists. Finally. Try to keep up.
 
 ## What is an ArrayList?

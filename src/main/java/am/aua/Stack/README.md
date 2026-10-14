@@ -1,5 +1,14 @@
 # Stack Data Structure 🥞
 
+## Public Methods
+* `push(E e)`: Adds an element to the top of the stack.
+* `pop()`: Removes and returns the top element.
+* `top()`: Returns the top element without removing it.
+* `size()`: Returns the number of elements.
+* `isEmpty()`: Returns true if the stack is empty.
+
+---
+
 A Stack is a collection of elements that follows the **Last-In, First-Out (LIFO)** principle. The last element added to the stack is the first one to be removed. Think of it like a stack of plates: you add plates to the top and take them from the top.
 
 ## Stack Interface Methods

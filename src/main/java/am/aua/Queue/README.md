@@ -1,5 +1,14 @@
 # Queue Implementations
 
+## Public Methods (Queue)
+* `size()`: Returns the number of elements.
+* `isEmpty()`: Checks if the queue is empty.
+* `enqueue(E e)`: Inserts an element at the rear.
+* `first()`: Returns the front element without removing it.
+* `dequeue()`: Removes and returns the front element.
+
+---
+
 This package contains implementations of various queue-based data structures in Java, adhering to the First-In, First-Out (FIFO) principle, with specialized variations for different operational requirements.
 
 ## 1. Queue Interface

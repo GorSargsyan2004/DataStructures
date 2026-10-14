@@ -1,5 +1,16 @@
 # Sorting Algorithms 🧠
 
+## Sorting Utility Methods
+* `bubbleSort(E[] arr)`
+* `selectionSort(E[] arr)`
+* `insertionSort(E[] arr)`
+* `mergeSort(E[] arr)`
+* `quickSort(E[] arr)`
+* `bucketSort(int[] arr)`
+* `radixSort(int[] arr)`
+
+---
+
 Welcome to the collection. Sorting is the bread and butter of Data Structures. Don't mess this up.
 
 ## Quick Cheat Sheet

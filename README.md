@@ -8,12 +8,14 @@ Welcome to my repository for the Data Structures course at AUA. This repo contai
 
 The code is organized by topic for easier navigation:
 
-*   **`src/main/java/am/aua/Sorting/`**: Contains various sorting algorithms and a `README.md` with performance benchmarks.
-*   **`src/main/java/am/aua/LinkedLists/`**: Contains implementations of Singly, Doubly, and Circular linked lists, along with a `README.md` explaining their mechanics.
-*   **`src/main/java/am/aua/Stack/`**: Contains implementations of Stack using Arrays and Linked Lists.
-*   **`src/main/java/am/aua/Queue/`**: Contains implementations of Queue, Deque and Circular Queue using Arrays and Linked Lists.
-*   **`src/main/java/am/aua/List/`**: Contains implementations of `ArrayList`.
-*   **`src/main/java/am/aua/PositionalList/`**: Contains implementations of `PositionalList` (handles/cursors approach).
+*   **[`Sorting`](src/main/java/am/aua/Sorting/README.md)**: Contains various sorting algorithms and performance benchmarks.
+*   **[`LinkedLists`](src/main/java/am/aua/LinkedLists/README.md)**: Contains implementations of Singly, Doubly, and Circular linked lists.
+*   **[`Stack`](src/main/java/am/aua/Stack/README.md)**: Contains implementations of Stack using Arrays and Linked Lists.
+*   **[`Queue`](src/main/java/am/aua/Queue/README.md)**: Contains implementations of Queue, Deque and Circular Queue.
+*   **[`List`](src/main/java/am/aua/List/README.md)**: Contains implementations of `ArrayList`.
+*   **[`PositionalList`](src/main/java/am/aua/PositionalList/README.md)**: Contains implementations of `PositionalList` (handles/cursors approach).
+
+
 *   **`src/main/java/am/aua/homeworks/`**: Each homework package contains its homework question and my solutions.
 
 ---
